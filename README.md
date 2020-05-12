@@ -1,28 +1,19 @@
-# Jison
+_After 2.5 years of silence in [the original Jison repo](http://github.com/zaach/jison) the team behind AlaSQL have made this community fork to harvest some of the great pull requests. The code here will be released on npm as "jisons" (extra s) and just like the story about nodejs and iojs the hope is that the two repos can one day merge again._ 
 
-[![Join the chat at https://gitter.im/jison-parsers-lexers/Lobby](https://badges.gitter.im/jison-parsers-lexers/Lobby.svg)](https://gitter.im/jison-parsers-lexers/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
-[![Build Status](https://travis-ci.org/GerHobbelt/jison.svg?branch=master)](https://travis-ci.org/GerHobbelt/jison)
-[![NPM version](https://badge.fury.io/js/jison-gho.svg)](http://badge.fury.io/js/jison-gho)
-[![Dependency Status](https://img.shields.io/david/GerHobbelt/jison.svg)](https://david-dm.org/GerHobbelt/jison)
-[![npm](https://img.shields.io/npm/dm/jison-gho.svg?maxAge=2592000)]()
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/GerHobbelt/jison.svg)](http://isitmaintained.com/project/GerHobbelt/jison "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/GerHobbelt/jison.svg)](http://isitmaintained.com/project/GerHobbelt/jison "Percentage of issues still open")
-
-* [Issues](http://github.com/zaach/jison/issues)
-* [Discuss](https://gitter.im/jison-parsers-lexers/Lobby)
-* [Website](https://gerhobbelt.github.io/jison/)
-* [**Original** JISON Website](http://jison.org)
-* [NPM package: `jison-gho`](https://www.npmjs.com/package/jison-gho)
+![image](https://user-images.githubusercontent.com/1063454/80858332-0a3d7800-8c59-11ea-8aa5-1732610a619e.png)
 
 
+**Update:**  
 
-> # Notice
->
-> This repository contains a fork maintained by GerHobbelt. The original JISON work has been done by Zachary Carter and is available in zaach/jison.
->
-> For an overview of all changes \(fixes and features\), see the section [What's New or Different?](#user-content-whats-new-or-different) further below. See also [pullreq \#338](https://github.com/zaach/jison/pull/338).
+_Was happy to see how https://github.com/GerHobbelt/jison picked up from where the original Jison repo left - but after 1.5 years of silence a dependency of a dependency has started [breaking every build using fixed versioning of dependencies](https://user-images.githubusercontent.com/1063454/81633283-afe8a800-940c-11ea-9fcd-1606655a66e7.png). AlaSQL is therefore making this repo into a community fork of jison-gho instead - to make sure that Jison can still be used without breaking the builds._ 
+
+![image](https://user-images.githubusercontent.com/1063454/81633208-8039a000-940c-11ea-8685-b82257d3555c.png)
 
 
+----
+
+
+# Jisons
 
 
 ## An API for creating parsers in JavaScript
@@ -36,24 +27,20 @@ Briefly, Jison takes a JSON encoded grammar or Bison style grammar and outputs a
 
 ## Installation
 
-Jison can be installed for [Node](http://nodejs.org) using [`npm`](http://github.com/isaacs/npm/)
-
-Using npm:
+Install globally
 
 ```
-npm install jison-gho -g
+npm install jisons -g
 ```
 
 
-
-
-## Usage from the command line
+## Usage 
 
 Clone the github repository for examples:
 
 ```
-git clone git://github.com/GerHobbelt/jison.git
-cd jison/examples
+npx degit AlaSQL/jisons/examples jison-examples
+cd jison-examples
 ```
 
 Now you're ready to generate some parsers:
